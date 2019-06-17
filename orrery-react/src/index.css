@@ -1,0 +1,13 @@
+body {
+  font: 14px "Century Gothic", Futura, sans-serif;
+  margin: 20px;
+}
+
+#orrery {
+    border: 1px solid black;
+}
+
+#orrery th, #orrery td {
+    padding: 20px;
+    border: 1px solid black;
+}
