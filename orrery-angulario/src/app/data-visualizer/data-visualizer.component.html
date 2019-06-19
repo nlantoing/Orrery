@@ -12,16 +12,17 @@
       <span>semi-major axis</span>
     </li>
 
-    <li class="orbit" *ngFor="let orbit of orbits">
-      <span>{{getBodyName(orbit.barycentre)}}</span>
-      <span>{{getBodyName(orbit.body)}}</span>
-      <span>{{orbit.argPeriapsis}}</span>
-      <span>{{orbit.eccentricity}}</span>
-      <span>{{orbit.epochTrueAnomaly}}</span>
-      <span>{{orbit.inclination}}</span>
-      <span>{{orbit.longAscNode}}</span>
-      <span>{{orbit.semiMajorAxis}}</span>
-    </li>
+    <app-orbit *ngFor="let orbit of orbits"
+               barycentre={{getBodyName(orbit.barycentre)}}
+               body={{getBodyName(orbit.body)}}
+               argPeriapsis={{orbit.argPeriapsis}}
+               eccentricity={{orbit.eccentricity}}
+               epochTrueAnomaly={{orbit.epochTrueAnomaly}}
+               inclination={{orbit.inclination}}
+               longAscNode={{orbit.longAscNode}}
+               semiMajorAxis={{orbit.semiMajorAxis}}
+               >
+    </app-orbit>
   </ol>
 
 </div>

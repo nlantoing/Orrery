@@ -1,0 +1,12 @@
+.orbit {
+    border: 1px solid black;
+    padding: 0.5em;
+    span {
+        display: inline-block;
+        width: 12%;
+    }
+}
+
+.orbit:hover, .orboit:active {
+    background-color: #ddd;
+}
