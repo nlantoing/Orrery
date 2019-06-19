@@ -1,0 +1,29 @@
+.container {
+    position: relative;
+    .orbits {
+        position: relative;
+        list-style: none;
+        padding: 0;
+        top: 0;
+        .orbit, .legend {
+            border: 1px solid black;
+            padding: 0.5em;
+            span {
+                display: inline-block;
+                width: 12%;
+            }
+        }
+        .legend {
+            background-color: white;
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            left: 0;
+            right: 0;
+            text-transform: capitalize;
+        }
+        .orbit:hover, .orboit:active {
+            background-color: #ddd;
+        }
+    }
+}
